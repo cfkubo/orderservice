@@ -12,7 +12,11 @@ public class OrderService {
     private OrderRepository orderRepository;
 
     public Order createOrder(Order order) {
-        return orderRepository.save(order);
+        // return orderRepository.save(order);
+        orderRepository.logConnection();
+        Order savedOrder = orderRepository.save(order);
+        orderRepository.logTableCreation();
+        return savedOrder;
     }
 
     public Order getOrderById(Long id) {
