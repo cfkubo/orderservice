@@ -1,5 +1,5 @@
 
-
+```
 orderservice/
 ├── pom.xml
 └── src
@@ -20,3 +20,4 @@ orderservice/
         └── resources
             ├── application.properties
             └── data.sql (optional, for initializing the database)
+```
