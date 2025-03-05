@@ -49,7 +49,40 @@ public class WelcomeController {
         sb.append("\"orderName\": \"Sample Order\",\n");
         sb.append("\"quantity\": 5,\n");
         sb.append("\"price\": 19.99\n");
-        sb.append("}'");
+        sb.append("}'\n");
+        sb.append("\n");
+        sb.append("<br>\n");
+
+        // Add new cURL commands
+        sb.append("curl -X POST \"http://localhost:8080/api/orders\" \\\n");
+        sb.append("-H \"Content-Type: application/json\" \\\n");
+        sb.append("-d '{\n");
+        sb.append("\"customerName\": \"khanna\",\n");
+        sb.append("\"totalAmount\": 5555\n");
+        sb.append("}'\n");
+        sb.append("\n");
+        sb.append("<br>\n");
+
+        sb.append("curl -X 'POST' \\\n");
+        sb.append("'http://127.0.0.1:8080/api/orders' \\\n");
+        sb.append("-H 'accept: application/json' \\\n");
+        sb.append("-H 'Content-Type: application/json' \\\n");
+        sb.append("-d '{\n");
+        sb.append("\"customerName\": \"string\",\n");
+        sb.append("\"totalAmount\": 0.1\n");
+        sb.append("}'\n");
+        sb.append("\n");
+        sb.append("<br>\n");
+
+        sb.append("curl -X 'PUT' \\\n");
+        sb.append("'http://127.0.0.1:8080/api/orders/11' \\\n");
+        sb.append("-H 'accept: application/json' \\\n");
+        sb.append("-H 'Content-Type: application/json' \\\n");
+        sb.append("-d '{\n");
+        sb.append("\"customerName\": \"string\",\n");
+        sb.append("\"totalAmount\": 0.1\n");
+        sb.append("}'\n");
+
         sb.append("</code></pre>");
 
         return sb.toString();
