@@ -51,6 +51,36 @@ curl -X POST "http://localhost:8080/api/orders" \
          }'
 ```
 
+```
+curl -X POST "http://localhost:8080/api/orders" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "customerName": "khanna",
+           "totalAmount": 5555
+         }'
+```
+
+```
+curl -X 'POST' \
+  'http://127.0.0.1:8080/api/orders' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "customerName": "string",
+  "totalAmount": 0.1
+}'
+```
+
+```
+curl -X 'PUT' \
+  'http://127.0.0.1:8080/api/orders/11' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "customerName": "string",
+  "totalAmount": 0.1
+}'
+```
 
 ```
 http://localhost:9090/actuator
