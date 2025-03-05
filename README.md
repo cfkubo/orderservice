@@ -48,6 +48,10 @@ curl -X POST "http://localhost:8080/api/orders" \
 ```
 
 ```
+http://localhost:8080/
+```
+
+```
 http://localhost:9090/actuator
 ```
 
