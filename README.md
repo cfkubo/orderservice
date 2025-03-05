@@ -156,10 +156,6 @@ If you wish to contribute to this project, please follow the standard GitHub wor
 4. Push to the branch.
 5. Open a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 
 ```
 curl -X POST "http://localhost:8080/api/orders" \
