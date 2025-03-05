@@ -54,3 +54,15 @@ http://localhost:9090/actuator
 ```
 http://localhost:9090/actuator/swagger-ui/index.html#/
 ```
+
+```
+http://localhost:9090/actuator/openapi/v1
+```
+
+```
+http://localhost:9090/actuator/openapi/x-actuator
+```
+
+```
+http://localhost:9090/actuator/swagger-ui/index.html?urls.primaryName=x-actuator
+```
