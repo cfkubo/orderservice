@@ -22,7 +22,11 @@ orderservice/
             └── data.sql (optional, for initializing the database)
 ```
 
+```
+http://localhost:8080/
+```
 
+![Alt text](static/home.png)
 
 ```
 curl -X POST "http://localhost:8080/api/orders" \
@@ -47,9 +51,6 @@ curl -X POST "http://localhost:8080/api/orders" \
          }'
 ```
 
-```
-http://localhost:8080/
-```
 
 ```
 http://localhost:9090/actuator
