@@ -46,3 +46,11 @@ curl -X POST "http://localhost:8080/api/orders" \
            "price": 19.99
          }'
 ```
+
+```
+http://localhost:9090/actuator
+```
+
+```
+http://localhost:9090/actuator/swagger-ui/index.html#/
+```
